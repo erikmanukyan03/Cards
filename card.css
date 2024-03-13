@@ -1,0 +1,68 @@
+body{
+    margin:0;
+}
+.wrapper{
+    display:flex;
+}
+.main{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    height: 100vh;
+}
+header{
+     width: 100%;
+    border: 1px solid black;
+    height:80px;
+}
+footer{
+    height: 20px;
+    padding: 20px;
+    border: 1px black solid;
+    /* width: 100%; */
+} 
+header button{
+    margin:20px;
+    padding: 10px;
+    background-color: transparent;
+}
+.instructions{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    width: 20%;
+    border: 1px solid black;
+    height: 100vh;
+    padding:0 5px;
+}
+.instructions p{
+    font-weight: bold;
+}
+
+.cards{
+     margin: 30px auto;
+    max-width: 600px;
+    gap:30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.card-item{
+    border: 1px black solid;
+    position: relative;
+   padding: 20px 60px;  
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+.section-cards{
+    flex: 1;
+    overflow-y: auto;
+    height: 80%;
+}
+.close-button {
+    cursor: pointer;
+    color: black;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
